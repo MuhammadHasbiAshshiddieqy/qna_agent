@@ -4,6 +4,7 @@ from flask_cors import CORS
 import weaviate
 from weaviate.classes.init import Auth
 from langchain_weaviate import WeaviateVectorStore
+from weaviate.collections.classes.filters import Filter
 from langchain_ollama import OllamaEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import ConversationalRetrievalChain
@@ -26,7 +27,7 @@ CORS(app)  # Enable CORS for all routes
 """Initialize Weaviate client with cloud credentials"""
 client = weaviate.connect_to_weaviate_cloud(
     cluster_url="epu3qawrpkjx7m0zafxq.c0.asia-southeast1.gcp.weaviate.cloud",
-    auth_credentials=Auth.api_key("rHJCtCBcUv046QMOk4mJSaPhqmIl4w0z2uZg"),
+    auth_credentials=Auth.api_key("UKIqKrRSlhI633pl9GQbQgqWqqBGhEOQtIac"),
 )
 
 # Setup embeddings
@@ -50,22 +51,14 @@ vectorstore_operasional = WeaviateVectorStore(
 )
 
 # Membuat retriever yang hanya mengambil dokumen dengan kategori "marketing"
-marketing_filter = {
-    "path": ["category"],
-    "operator": "Equal",
-    "valueString": "marketing"
-}
+marketing_filter = Filter.by_property("category").equal("marketing")
 
 # Membuat retriever yang hanya mengambil dokumen dengan kategori "operasional"
-operasional_filter = {
-    "path": ["category"],
-    "operator": "Equal",
-    "valueString": "operasional"
-}
+operasional_filter = Filter.by_property("category").equal("operasional")
 
 # Setup retrievers with a higher k value to ensure better document coverage
-retriever_marketing = vectorstore_marketing.as_retriever(search_kwargs={"k": 5, "score_threshold": 0.7, "where": marketing_filter})
-retriever_operasional = vectorstore_operasional.as_retriever(search_kwargs={"k": 5, "score_threshold": 0.7, "where": operasional_filter})
+retriever_marketing = vectorstore_marketing.as_retriever(search_kwargs={"filters": marketing_filter})
+retriever_operasional = vectorstore_operasional.as_retriever(search_kwargs={"filters": operasional_filter})
 
 # LLM instance for all operations
 llm = ChatOllama(model="neural-chat", temperature=0.1)
@@ -133,7 +126,8 @@ def build_rag_node(retriever, domain_name):
         memory = conversation_memories.get(conversation_id,
                                         ConversationBufferMemory(
                                             memory_key="chat_history",
-                                            return_messages=True
+                                            return_messages=True,
+                                            output_key='answer'
                                         ))
 
         # First, retrieve documents
