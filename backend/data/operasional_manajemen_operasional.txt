@@ -1,0 +1,11 @@
+# Manajemen Operasional
+
+Manajemen operasional berkaitan dengan desain dan kontrol proses produksi dan bisnis dalam produksi barang atau jasa, dengan fokus pada penggunaan sumber daya secara efektif dan efisien.
+
+Key Performance Indicators (KPIs) adalah metrik yang digunakan untuk mengukur kinerja operasional. Contoh umum termasuk produktivitas, efisiensi, kualitas, dan waktu siklus.
+
+Lean management adalah pendekatan untuk menjalankan organisasi yang mendukung konsep peningkatan berkelanjutan, sebuah pendekatan jangka panjang untuk bekerja secara sistematis untuk mencapai perubahan kecil dan bertahap.
+
+Just-in-Time (JIT) adalah sistem produksi yang bertujuan untuk meningkatkan efisiensi dan mengurangi biaya dengan menerima bahan hanya sesuai kebutuhan dalam proses produksi, mengurangi inventaris dan biaya terkait.
+
+Business Process Reengineering (BPR) adalah analisis dan desain ulang alur kerja dan proses bisnis dalam suatu organisasi. BPR bertujuan untuk membantu organisasi secara fundamental memikirkan kembali bagaimana mereka melakukan pekerjaan.

@@ -1,0 +1,11 @@
+# Manajemen Inventaris
+
+Manajemen inventaris adalah proses pemesanan, penyimpanan, dan penggunaan inventaris perusahaan: bahan mentah, komponen, dan produk jadi, serta pengemasan dan barang konsumsi.
+
+Economic Order Quantity (EOQ) adalah model inventaris yang menentukan jumlah optimal barang yang harus dipesan untuk meminimalkan total biaya inventaris, termasuk biaya penyimpanan dan biaya pemesanan.
+
+Safety stock adalah inventaris tambahan yang disimpan untuk mengurangi risiko stockout yang disebabkan oleh ketidakpastian dalam permintaan atau lead time pengiriman.
+
+ABC analysis adalah teknik untuk mengkategorikan item inventaris berdasarkan nilai dan volume penjualan tahunan, dengan item 'A' menyumbang nilai tertinggi dan memerlukan kontrol inventaris yang paling ketat.
+
+Inventory turnover adalah rasio yang mengukur berapa kali inventaris perusahaan telah terjual selama periode tertentu. Rasio yang tinggi menunjukkan manajemen inventaris yang baik dan permintaan yang kuat.

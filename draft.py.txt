@@ -1,0 +1,67 @@
+# backend/app.py
+from langchain_ollama import ChatOllama
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import os
+# import dotenv
+
+# Load environment variables from .env file
+# dotenv.load_dotenv()
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+
+# Store conversation history
+conversations = {}
+
+@app.route('/api/chat', methods=['POST'])
+def chat():
+    data = request.json
+    conversation_id = data.get('conversation_id', 'default')
+    user_message = data.get('message', '')
+    
+    # Initialize conversation if it doesn't exist
+    if conversation_id not in conversations:
+        conversations[conversation_id] = []
+    
+    # Add user message to conversation history
+    conversations[conversation_id].append({"role": "user", "content": user_message})
+    
+    try:
+        # Inisialisasi LLM
+        llm = ChatOllama(model="deepseek-r1", temperature=0.1)
+        llm_resp = llm.invoke(conversations[conversation_id])
+        
+        # Extract assistant's message
+        assistant_message = llm_resp.content
+        
+        # Add assistant's message to conversation history
+        conversations[conversation_id].append({"role": "assistant", "content": assistant_message})
+        
+        return jsonify({
+            "message": assistant_message,
+            "conversation_id": conversation_id
+        })
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/conversations', methods=['GET'])
+def get_conversations():
+    return jsonify(list(conversations.keys()))
+
+@app.route('/api/conversations/<conversation_id>', methods=['GET'])
+def get_conversation(conversation_id):
+    if conversation_id in conversations:
+        return jsonify(conversations[conversation_id])
+    return jsonify({"error": "Conversation not found"}), 404
+
+@app.route('/api/conversations/<conversation_id>', methods=['DELETE'])
+def delete_conversation(conversation_id):
+    if conversation_id in conversations:
+        del conversations[conversation_id]
+        return jsonify({"success": True})
+    return jsonify({"error": "Conversation not found"}), 404
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)

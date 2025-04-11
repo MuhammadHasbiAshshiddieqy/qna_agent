@@ -1,0 +1,42 @@
+# Cara memulai
+## Instalasi
+brew install uv
+
+## Cek Instalasi
+uv --version
+
+# Virtual Environment (https://docs.astral.sh/uv/pip/environments/#using-a-virtual-environment)
+## Membuat Virtual Environment
+uv venv
+uv venv environment-test --python=3.10
+uv venv --python=3.10
+
+## Aktifkan Virtual Environment
+source environment-test/bin/activate
+source .venv/bin/activate
+
+## Mematikan Virtual Environment
+deactivate
+
+# Dependensi (https://docs.astral.sh/uv/pip/packages/)
+## Instalasi Dependensi
+uv pip install <package>
+uv pip install -r requirements.txt
+
+## Melihat List Dependensi
+uv pip show langchain
+uv pip list
+uv pip list --format json
+
+## Memindahlan List Dependensi ke requirements.txt
+uv pip freeze > requirements.txt
+
+# Bekerja dengan pyproject.toml
+## Inisiasi pyproject.toml
+uv init
+
+## Menambahkan Dependensi ke pyproject.toml
+uv add <package>
+uv add -r requirements.txt
+
+## Mengunci Dependensi

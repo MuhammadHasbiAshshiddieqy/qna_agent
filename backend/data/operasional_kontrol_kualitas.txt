@@ -1,0 +1,11 @@
+# Kontrol Kualitas
+
+Kontrol kualitas (QC) adalah proses yang memastikan produk dan layanan memenuhi harapan pelanggan. Ini melibatkan pemeriksaan dan pengujian untuk mengidentifikasi dan memperbaiki cacat.
+
+Six Sigma adalah metodologi untuk meningkatkan kualitas proses bisnis dengan mengurangi variabilitas dan menghilangkan cacat. Tujuannya adalah untuk mencapai tidak lebih dari 3,4 cacat per sejuta peluang.
+
+Kaizen adalah filosofi bisnis Jepang yang berfokus pada peningkatan berkelanjutan. Dalam kontrol kualitas, ini melibatkan peningkatan inkremental kecil yang berkelanjutan dalam proses produksi atau layanan.
+
+Total Quality Management (TQM) adalah pendekatan manajemen di mana semua anggota organisasi berpartisipasi dalam meningkatkan proses, produk, layanan, dan budaya di mana mereka bekerja, dengan tujuan akhir meningkatkan kualitas.
+
+Statistical Process Control (SPC) menggunakan metode statistik untuk memantau dan mengontrol proses untuk memastikan bahwa ia beroperasi secara efisien dan menghasilkan produk yang memenuhi spesifikasi.

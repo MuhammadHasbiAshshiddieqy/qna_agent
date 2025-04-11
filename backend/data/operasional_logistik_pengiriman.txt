@@ -1,0 +1,11 @@
+# Logistik Pengiriman
+
+Manajemen rantai pasokan (supply chain management) adalah pengawasan barang, informasi, dan keuangan saat mereka bergerak dalam proses dari pemasok ke produsen ke pedagang grosir ke pengecer ke konsumen.
+
+Logistik last-mile adalah tahap terakhir dalam proses pengiriman, di mana barang bergerak dari pusat distribusi ke tujuan akhirnya. Ini sering kali adalah bagian yang paling mahal dan kompleks dari proses pengiriman.
+
+Cross-docking adalah praktik logistik di mana produk dari pemasok atau pabrik dikirim langsung ke pelanggan atau toko ritel dengan sedikit atau tanpa penanganan atau penyimpanan sementara.
+
+Reverse logistics berkaitan dengan penanganan dan pengelolaan barang yang dikembalikan ke pemasok, produsen, atau pengecer, serta reklamasi produk, recycling, dan pembuangan produk.
+
+Freight forwarding adalah pengaturan pengiriman barang dari satu titik ke titik lainnya melalui satu atau beberapa moda transportasi. Forwarder bertindak sebagai perantara antara pengiriman dan berbagai layanan transportasi.

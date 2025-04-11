@@ -1,0 +1,11 @@
+# Customer Relationship
+
+Customer Relationship Management (CRM) adalah pendekatan untuk mengelola interaksi perusahaan dengan pelanggan saat ini dan potensial, menggunakan analisis data tentang riwayat pelanggan untuk meningkatkan hubungan bisnis, khususnya berfokus pada retensi pelanggan.
+
+Customer lifetime value (CLV) adalah prediksi nilai bersih yang terkait dengan seluruh hubungan masa depan dengan pelanggan. Metrik ini membantu bisnis untuk mengambil keputusan tentang berapa banyak yang harus diinvestasikan dalam memperoleh pelanggan baru.
+
+Customer segmentation adalah praktik membagi pelanggan ke dalam kelompok berdasarkan karakteristik umum seperti demografi, perilaku, atau nilai. Ini memungkinkan perusahaan untuk menargetkan pemasaran mereka secara lebih efektif.
+
+Customer loyalty programs dirancang untuk mendorong pelanggan untuk terus melakukan pembelian dengan memberikan insentif seperti diskon, hadiah, atau akses eksklusif. Program yang efektif meningkatkan retensi dan nilai pelanggan.
+
+Customer feedback loops adalah sistem untuk mengumpulkan, menganalisis, dan bertindak berdasarkan umpan balik pelanggan secara berkelanjutan. Ini sangat penting untuk peningkatan produk, layanan, dan pengalaman pelanggan secara keseluruhan.

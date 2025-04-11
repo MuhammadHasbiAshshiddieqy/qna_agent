@@ -1,0 +1,11 @@
+# Manajemen Gudang
+
+Manajemen gudang adalah proses yang memastikan bahwa semua operasi di dalam gudang berjalan seefisien mungkin. Ini meliputi penerimaan, penyimpanan, pengambilan, dan pengiriman barang.
+
+Sistem manajemen gudang (WMS) adalah perangkat lunak yang membantu dalam pengelolaan dan kontrol operasi gudang harian, termasuk pelacakan inventaris, pengisian stok, dan optimalisasi ruang.
+
+Proses penerimaan gudang melibatkan verifikasi bahwa barang yang diterima sesuai dengan pesanan pembelian dalam hal kuantitas dan kualitas, serta memperbarui catatan inventaris secara akurat.
+
+Metode penyimpanan dan pengambilan barang seperti FIFO (First-In-First-Out) dan LIFO (Last-In-First-Out) memiliki implikasi signifikan untuk manajemen inventaris, terutama untuk barang yang memiliki tanggal kedaluwarsa.
+
+Optimalisasi tata letak gudang adalah kunci untuk meningkatkan efisiensi operasional. Barang yang sering dipesan harus disimpan di lokasi yang mudah diakses untuk mengurangi waktu pengambilan dan biaya tenaga kerja.
